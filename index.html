@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCK - Space Docking Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="hud">
+        <div id="crosshair">+</div>
+        <div id="info">
+            <div>Distance: <span id="distance">--</span> m</div>
+            <div>Closure: <span id="closure">--</span> m/s</div>
+            <div>Velocity: <span id="velocity">--</span></div>
+            <div>Angular: <span id="angular">--</span></div>
+        </div>
+        <div id="controls-hint">
+            WASD/RF: Translate | IJKL/QE: Rotate | SPACE: Kill Rot | X: Kill Vel
+        </div>
+    </div>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+        }
+    }
+    </script>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
